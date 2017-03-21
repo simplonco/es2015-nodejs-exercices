@@ -7,6 +7,13 @@ class UserModel {
     this.description = description;
   }
 
+  getName() {
+    let newFullName = `${this.firstName} ${this.lastName}`
+		.split(' ')
+		.map(word => word[0].toUpperCase() + word.substr(1))
+		.join(' ');
+    return newFullName;
+  }
 }
 
 module.exports = UserModel;

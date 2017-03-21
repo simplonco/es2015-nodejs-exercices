@@ -1,9 +1,9 @@
-const UserModel = require('./user.model');
+const SmartUserModel = require('./smart.user.model');
 
 class UserList {
 
   constructor(data) {
-    this.list = data.map(item => new UserModel(item));
+    this.list = data.map(item => new SmartUserModel(item));
   }
 
   getItemById(id) {
@@ -20,7 +20,7 @@ class UserList {
     console.log('data : ', JSON.stringify(data));
     //const dataWithId = {...data, id: this.getNextId()+1 };
     data.id = this.getNextId()+1;
-    const user = new UserModel(data);
+    const user = new SmartUserModel(data);
     if(user) {
       this.list = [...this.list, user];
     }

@@ -11,7 +11,14 @@
 
     <main>
         <h1>Création</h1>
-        <p>Step4 : [creation.ejs] Faire un formulaire de creation de personnalité avec comme method POST et comme action '/creation'</p>
+        <form action="/creation" method="post">
+        	<input type="text" name="firstName" placeholder="firstName">
+        	<input type="text" name="lastName" placeholder="lastName">
+        	<input type="text" name="role" placeholder="role">
+        	<input type="text" name="birthYear" placeholder="birthYear">
+			<textarea name="description" rows="8" cols="80" placeholder="description"></textarea>
+			<input type="submit" name="" value="Create">
+        </form>
     </main>
 
     <footer>

@@ -3,6 +3,4 @@ const data = require('../data/users.mock');
 
 const userList = new UserList(data.users);
 
-module.exports = {
-  userList
-};
+module.exports = { userList };

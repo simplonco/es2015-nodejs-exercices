@@ -2,7 +2,7 @@ module.exports = {
   users: [{
     id: 1,
     firstName: 'albert',
-    lastName: 'enstein',
+    lastName: 'einstein',
     role: 'physicien',
     birthYear: 1879,
     description: 'Physicien américain d\'origine allemande, Albert Einstein a changé par sa théorie fondamentale de la relativité, la conception humaine du temps, de l\'espace et de l\'univers, bouleversant la pensée scientifique et philosophique.'
