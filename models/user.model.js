@@ -14,7 +14,6 @@ class UserModel {
 		.join(' ');
     return newFullName;
   }
-
 }
 
 module.exports = UserModel;
